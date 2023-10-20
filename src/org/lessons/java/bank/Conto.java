@@ -1,11 +1,24 @@
 package org.lessons.java.bank;
 
+import java.util.Random;
+
 public class Conto {
 
-    // attributi
+    // randomizzer
+    Random randomNumber = new Random();
 
+    // attributi
+    private int numeroDiConto;
+    private String nomeDelProprietario;
+    private double saldo;
 
     // costruttori
+
+    public Conto(String nomeDelProprietario) {
+        this.nomeDelProprietario = nomeDelProprietario;
+        this.saldo = 0;
+        this.numeroDiConto = randomNumber.nextInt(1, 1000);
+    }
 
 
     // metodi
