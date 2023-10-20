@@ -40,9 +40,9 @@ public class Bank {
         // debuger
         /*
         System.out.println(contoUser.getSaldoForm());
+         */
         System.out.println(contoUser.getNumeroDiConto());
         System.out.println(contoUser.getNomeDelProprietario());
-         */
 
 
         // terminiamo scanner

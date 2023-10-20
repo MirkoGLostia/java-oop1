@@ -62,6 +62,9 @@ public class Conto {
         }
 
         public void removeMoneyFromSaldo(double arg) {
+            if (arg < 0){
+                arg = -1 * arg;
+            }
             if (arg <= this.saldo){
                 this.saldo -= arg;
             }else {
