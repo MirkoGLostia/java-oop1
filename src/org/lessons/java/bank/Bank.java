@@ -24,10 +24,10 @@ public class Bank {
 
             if (userChoice == 1){
                 System.out.println("How much do you want to add?");
-                contoUser.addMoneyToSaldo(userInput.nextInt());
+                contoUser.addMoneyToSaldo(userInput.nextDouble());
             } else if (userChoice == 2) {
                 System.out.println("How much do you want to subtract?");
-                contoUser.removeMoneyFromSaldo(userInput.nextInt());
+                contoUser.removeMoneyFromSaldo(userInput.nextDouble());
             } else if (userChoice == 3) {
                 exitCode = true;
             }else {
