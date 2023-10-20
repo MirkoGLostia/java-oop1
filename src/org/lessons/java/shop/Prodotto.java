@@ -5,7 +5,7 @@ import java.util.Random;
 
 public class Prodotto {
 
-    // inizializzo un randomizer
+    // metodi uttili esterni
     private Random randomNumber = new Random();
     private DecimalFormat decform = new DecimalFormat("0.00");
 

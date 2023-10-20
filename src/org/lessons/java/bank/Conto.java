@@ -1,11 +1,13 @@
 package org.lessons.java.bank;
 
+import java.text.DecimalFormat;
 import java.util.Random;
 
 public class Conto {
 
-    // randomizzer
-    Random randomNumber = new Random();
+    // metodi uttili esterni
+    private Random randomNumber = new Random();
+    private DecimalFormat decForm = new DecimalFormat("0.00");
 
     // attributi
     private int numeroDiConto;
@@ -48,4 +50,22 @@ public class Conto {
             public double getSaldo() {
                 return saldo;
             }
+
+            public String getSaldoForm() {
+                String saldo = decForm.format(this.saldo) + "€";
+                return saldo;
+            }
+
+        // metodi generici
+        public void addMoneyToSaldo(double arg) {
+            this.saldo += arg;
+        }
+
+        public void removeMoneyFromSaldo(double arg) {
+            if (arg <= this.saldo){
+                this.saldo -= arg;
+            }else {
+                System.out.println("you don't have enough money");
+            }
+        }
 }
