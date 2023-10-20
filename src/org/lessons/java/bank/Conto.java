@@ -24,4 +24,28 @@ public class Conto {
     // metodi
 
         // getter e setter
+            // numero di conto
+
+            public int getNumeroDiConto() {
+                return numeroDiConto;
+            }
+
+
+
+            // nome proprietario
+
+            public String getNomeDelProprietario() {
+                return nomeDelProprietario;
+            }
+
+            public void setNomeDelProprietario(String nomeDelProprietario) {
+                this.nomeDelProprietario = nomeDelProprietario;
+            }
+
+
+            // saldo
+
+            public double getSaldo() {
+                return saldo;
+            }
 }
